@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For Someone Very Special 💖</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+            color: white;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 40px;
+            border-radius: 20px;
+            display: inline-block;
+            backdrop-filter: blur(10px);
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .yes { background-color: #ff4d6d; color: white; }
+        .no { background-color: #6c757d; color: white; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Hey Beautiful 💕</h1>
+        <p>From the moment you smiled at me, my world got brighter.</p>
+        <p>You make ordinary days feel special.</p>
+        <h2>Will you be my girlfriend? 💖</h2>
+        <button class="yes" onclick="yesClicked()">Yes 💘</button>
+        <button class="no" onclick="noClicked()">No 🙈</button>
+    </div>
+
+    <script>
+        function yesClicked() {
+            document.body.innerHTML = "<h1 style='color:white;margin-top:200px;'>You just made me the happiest person alive 💞</h1>";
+        }
+
+        function noClicked() {
+            alert("Hmm… I think you misclicked 😏 Try again.");
+        }
+    </script>
+
+</body>
+</html>
